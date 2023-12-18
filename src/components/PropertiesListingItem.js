@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 function PropertiesListingItem ({ property }) {
-    const { Id, Description, ThumbnailURL, Title, Location, Bathrooms, Bedrooms } = property;
+    const { Id, ThumbnailURL, Title, Location, Bathrooms, Bedrooms } = property;
     return (
         <div className="col-md-3 rounded">
               <div className="card mb-3 box-shadow">

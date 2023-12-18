@@ -1,7 +1,7 @@
-import { useContext, useEffect, useMemo, useState } from 'react';
+import { useContext,  useMemo, useState } from 'react';
 import { PropertiesContextData  } from '../PropertiesContext';
 import { UserContextData  } from '../UserContext';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import PropertyDisplayHeader from './PropertyDisplayHeader';
 import PropertyDisplayPhotoForm from './PropertyDisplayPhotoForm';
@@ -27,7 +27,6 @@ function PropertyDisplay () {
 
   useMemo(() => {
     getProperty();
-    console.log(property)
   }, [properties])
 
     return (

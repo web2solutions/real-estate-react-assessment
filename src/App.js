@@ -1,13 +1,12 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import * as ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, Link, HashRouter } from "react-router-dom";
+import { useState, useMemo } from 'react';
+import {  Routes, Route, HashRouter } from "react-router-dom";
 
 
 
 import './album.css';
 
 import  Header from './components/Header';
-import  Banner from './components/Banner';
+// import  Banner from './components/Banner';
 import Footer from './components/Footer';
 
 import PropertiesListing from "./components/PropertiesListing";

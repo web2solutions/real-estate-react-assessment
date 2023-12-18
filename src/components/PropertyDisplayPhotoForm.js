@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
 
-function PropertyDisplayPhotoForm ({ property, Id }) { 
+function PropertyDisplayPhotoForm ({ property }) { 
   return (
     <>
       <div className="row pt-3">
@@ -81,7 +80,7 @@ function PropertyDisplayPhotoForm ({ property, Id }) {
             </div>
 
             <div className="mb-3">
-              <textarea  rows={10} className="form-control" id="comments" placeholder="Comments"></textarea>
+              <textarea  rows={10} className="form-control" id="comments" placeholder="Comments" />
               <div className="invalid-feedback">
                 Please provide your name
               </div>

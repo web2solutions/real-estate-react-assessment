@@ -1,11 +1,15 @@
-import { Link } from "react-router-dom";
 
 function Footer () {
+
+    function goToTop () {
+        window.scrollTo(0, 0);
+    }
+
     return (
         <footer className="text-muted bg-light">
                 <div className="container">
                 <p className="float-right">
-                    <a href="#">Back to top</a>
+                    <button className="btn btn-outline-primary" onClick={goToTop}>Back to top</button>
                 </p>
                 <p>Website Footer</p>
             </div>
