@@ -44,7 +44,7 @@ function App() {
 
   async function getProperties() {
     try {
-      const response = await fetch('http://localhost:3000/listings.json'); // https://s3.us-west-2.amazonaws.com/cdn.number8.com/LA/listings.json
+      const response = await fetch(location.protocol + '//' + location.host +'/listings.json'); // https://s3.us-west-2.amazonaws.com/cdn.number8.com/LA/listings.json
       const data = await response.json();
       // console.log(data)
       return { data };
